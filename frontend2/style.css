@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    padding-top: 0.1px;
+}
+
+#nav {
+    height: 80px;
+    width: 100%;
+    /* background: #000; */
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+
+}
+
+#nav h2 {
+    width: 22%;
+    /* background-color: aquamarine; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#nav h1 {
+    font-family: "Monument";
+    width: 22%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    letter-spacing: -2px;
+}
+
+#nav h2:nth-last-child(1) {
+    width: 10%;
+}
+#nav h2:nth-last-child(2) {
+    width: 29%;
+}
+#center{
+    padding: 40px;
+    /* background: red; */
+}
+#center #content{
+    position: relative;
+}
+#center #content video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+#center #content #overlay{
+    height: 52%;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    padding: 3vw;
+     
+}
+#overlay #over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#over1 {
+    font-size: 3.6vw;
+    font-family: monument;
+}
+#over1 h2{
+    font-size: 3.6vw;
+    color: white;
+    /* mix-blend-mode:multiply; */
+}
+#over1 h3{
+    font-size: 2vw;
+    /* mix-blend-mode: difference; */
+    padding: 15px;
+    margin: 5px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+#over1 i{
+    font-size: 3.6vw;
+    font-family: monument;
+}
+#over2 {
+    font-size: 1vw;
+    color: white;
+    padding: 2vw;
+    /* background-color: aqua; */
+    }
+
+#over2 h4{
+font-size: 1vw;
+}
+#overlay  #over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid white;
+}
