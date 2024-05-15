@@ -77,12 +77,15 @@ body {
     object-fit: cover;
     border-radius: 5px;
 }
-#center #content #overlay{
+#overlay{
     height: 52%;
     width: 100%;
     bottom: 0;
     position: absolute;
     padding: 3vw;
+    color:#fff;
+    /* background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px); */
      
 }
 #overlay #over1{
@@ -128,4 +131,149 @@ font-size: 1vw;
     align-items: center;
     justify-content: space-between;
     border-top: 2px solid white;
+}
+#scroll{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    white-space:nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+#container{
+    height:100%;
+    width: 110%;
+    /* background-color: coral; */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes anime {
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
+#scroll img{
+    height:100%;
+    width: 15%;
+    margin: 1vw;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+#alphabet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    height: 11vh;
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#alphabet h5{
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    border-bottom: 2px solid black;
+    letter-spacing: 4px;
+}
+#alphabet h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    /* background-color: orangered; */
+    padding: 0.6vw;
+    /* color: white; */
+    border-radius: 50%;
+    height: 2.5vw;
+    width: 2.5vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgba(0, 0, 0, 0);
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: all 0.2;
+}
+#alphabet h6:hover{
+ 
+    border: 1px solid black;
+    
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw; 
+}
+#page2-part1{
+    height: 100%;
+    width: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/12235264/pexels-photo-12235264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+#page2-part2{
+    height: 100%;
+    width: 46%;
+
+}
+#page2-part2 img{
+    width:  100%;
+    height: 60%;
+    object-fit: cover;
+}
+#page2-part2 #peragraph{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 4vh;
+    width: 100%;
+    height: 40%;
+}
+#page2-part2 #peragraph p{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#page3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#page3 img{
+    animation-name: rotate;
+    
+}
+#page #video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    
+}
+
+#page3 video{
+    width: 100%;
+    height: 100%;
+
+}
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
 }
